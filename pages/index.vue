@@ -8,7 +8,9 @@
             <hr class="my-3" />
             <div class="flex justify-between">
               <p class="text-xl">Software Engineer</p>
-              <a href="mailto:sariz.wachirasook@gmail.com" class="text-xl text-gray-500">sariz.wachirasook@gmail.com</a>
+              <a href="mailto:sariz.wachirasook@gmail.com" class="text-xl text-gray-500"
+                >sariz.wachirasook@gmail.com</a
+              >
             </div>
           </div>
           <Avatar
@@ -23,9 +25,10 @@
         <Card>
           <H2>About Me</H2>
           <p>
-            Full-stack developer with 3 years of experience. I'm currently working at
-            <a href="https://www.thesoftwaresimple.com/">The Software Simple</a> as a full-stack
-            developer.
+            Full-stack developer with 3 years of experience. I'm currently working at Outsourcify
+            Co., Ltd. I'm a self-taught developer who loves to learn new things. I'm a fast learner
+            and I'm always willing to learn new things. I'm a team player and I'm always willing to
+            help my team members.
           </p>
         </Card>
 
@@ -56,16 +59,37 @@
         </Card>
       </div>
 
-      <div class="grid grid-cols-1 gap-4">
-        <!-- <Card>
-        <H2>Contacts</H2>
-        <List :items="contacts" />
-      </Card>
+      <div class="flex flex-col gap-4">
+        <Card>
+          <!-- contact -->
+          <H2>Contacts</H2>
 
-      <Card>
-        <H2>Language</H2>
-        <List :items="languages" />
-      </Card> -->
+          <ul>
+            <li class="flex justify-center gap-2">
+              <strong>Email</strong>
+              <span>sariz.wachirasook@gmail.com</span>
+            </li>
+            <li class="flex justify-center gap-2">
+              <strong>Phone</strong>
+              <span>+66 623249451</span>
+            </li>
+          </ul>
+        </Card>
+
+        <Card>
+          <!-- contact -->
+          <H2>Language</H2>
+          <ul>
+            <li class="flex justify-between">
+              <strong>English</strong>
+              <span>Intermediate</span>
+            </li>
+            <li class="flex justify-between">
+              <strong>Thai</strong>
+              <span>Native</span>
+            </li>
+          </ul>
+        </Card>
       </div>
     </div>
   </div>
