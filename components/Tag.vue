@@ -1,5 +1,9 @@
 <template>
-  <span class="p-1 bg-green-50 rounded inline-flex" :class="[generateColor(tag)]">{{ tag }}</span>
+  <span
+    class="px-1 py-0.5 bg-green-50 rounded inline-flex cursor-pointer hover:opacity-70 transition-opacity"
+    :class="[generateColor(tag)]"
+    >{{ tag }}</span
+  >
 </template>
 
 <script setup lang="ts">
@@ -7,7 +11,7 @@ const props = defineProps<{
   tag: string;
 }>();
 
-const generateColor = (tag) => {
+const generateColor = (tag: string) => {
   // random color by tag
   const colors = [
     'bg-red-100',
@@ -19,7 +23,7 @@ const generateColor = (tag) => {
     'bg-pink-100',
   ];
 
-  const hash = tag.split('').reduce((acc, char) => {
+  const hash = tag.split('').reduce((acc: any, char: string) => {
     return acc + char.charCodeAt(0);
   }, 0);
 

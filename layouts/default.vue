@@ -1,11 +1,7 @@
 <template>
   <div>
-    header
-
-    <div class="w-[720px] mx-auto">
+    <div class="max-w-[1024px] w-full mx-auto px-4 py-10 bg-gray-50">
       <slot />
     </div>
-
-    footer
   </div>
 </template>

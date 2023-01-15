@@ -1,10 +1,10 @@
 <template>
-  <div class="grid grid-cols-[2fr,1fr] gap-4">
+  <div class="grid grid-cols-1 md:grid-cols-[2fr,1fr] gap-4">
     <div class="grid grid-cols-1 gap-4">
       <Card>
-        <H2>Summary</H2>
+        <H2>About Me</H2>
         <p>
-          I'm a full-stack developer with 3 years of experience. I'm currently working at
+          Full-stack developer with 3 years of experience. I'm currently working at
           <a href="https://www.thesoftwaresimple.com/">The Software Simple</a> as a full-stack
           developer.
         </p>
@@ -16,29 +16,29 @@
       </Card>
 
       <Card>
-        <H2>Frontend</H2>
-        <div>
+        <H2>Frontend Skills</H2>
+        <div class="inline-flex flex-wrap gap-2">
           <Tag v-for="(item, index) in frontend" :key="index" :tag="item" />
         </div>
       </Card>
 
       <Card>
-        <H2>Frontend</H2>
-        <div>
-          <Tag v-for="(item, index) in frontend" :key="index" :tag="item" />
+        <H2>Backend Skills</H2>
+        <div class="inline-flex flex-wrap gap-2">
+          <Tag v-for="(item, index) in backend" :key="index" :tag="item" />
         </div>
       </Card>
 
       <Card>
         <H2>Infrastructure</H2>
-        <Tag v-for="(item, index) in iaas" :key="index" :tag="item" />
-        <Tag v-for="(item, index) in paas" :key="index" :tag="item" />
-        <Tag v-for="(item, index) in saas" :key="index" :tag="item" />
+        <div class="inline-flex flex-wrap gap-2">
+          <Tag v-for="(item, index) in iaas" :key="index" :tag="item" />
+        </div>
       </Card>
     </div>
 
     <div class="grid grid-cols-1 gap-4">
-      <Card>
+      <!-- <Card>
         <H2>Contacts</H2>
         <List :items="contacts" />
       </Card>
@@ -46,60 +46,73 @@
       <Card>
         <H2>Language</H2>
         <List :items="languages" />
-      </Card>
+      </Card> -->
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-const frontend = ref([
-  'HTML',
-  'CSS',
-  'JavaScript',
-  'Vue.js',
-  'Express.js',
-  'PostgreSQL',
-  'Git',
-  'GitHub',
-  'Heroku',
-  'Netlify',
-]);
+const frontend = ref(['HTML5', 'SCSS', 'JavaScript', 'jQuery', 'Vue.js', 'Nuxt.js']);
 
 const backend = ref([
-  'PHP',
-  'Laravel',
-  'MySQL',
-  'MongoDB',
+  'Symfony',
+  'API Platform',
+  'Magento',
+  'MySQL (MariaDB, MySQL, PostgreSQL)',
   'Redis',
   'Node.js',
   'Express.js',
   'Prisma',
 ]);
 
-const iaas = ref(['DigitalOcean', 'AWS', 'Google Cloud', 'Azure', 'Linode', 'Vultr', 'Cloudflare']);
-
-const paas = ref(['Heroku', 'Netlify', 'Vercel', 'Firebase', 'AWS', 'DigitalOcean', 'Cloudflare']);
-
-const saas = ref(['Stripe', 'PayPal', 'SendGrid', 'AWS', 'Google Cloud']);
+const iaas = ref([
+  'AWS',
+  'Azure',
+  'Linode',
+  'Vultr',
+  'Heroku',
+  'Netlify',
+  'Firebase',
+  'DigitalOcean',
+  'Cloudflare',
+  'Stripe',
+  'PayPal',
+  'SendGrid',
+  'Google Cloud',
+]);
 
 const experiences = ref([
   {
-    title: 'Full-stack developer',
-    company: 'The Software Simple',
-    date: '2021 - Present',
-    description: 'Working on a project for a client.',
+    title: 'Full-Stack Developer',
+    company: 'Outsourcify Co., Ltd',
+    date: '2020 - Present',
+    description: 'Experience in e-commerce, e-learning, and custom software development solutions.',
+    logo: 'https://lh5.googleusercontent.com/-W7Ibrkqhtdw/AAAAAAAAAAI/AAAAAAAAAAA/h4Dj9NFL6NU/s44-p-k-no-ns-nd/photo.jpg',
+    link: 'https://outsourcify.net/',
   },
   {
-    title: ' developer',
-    company: 'The Software Simple',
-    date: '2020 - 2021',
-    description: 'Working on a project for a client.',
-  },
-  {
-    title: 'Work at Outsourcify, Co., Ltd. as a full-stack developer',
-    company: 'The Software Simple',
-    date: '2019 - 2020',
+    title: 'Tester & Front-end (part time)',
+    company: 'Mae Fah Luang University',
+    date: '2019',
     description: 'Working on a project for a cli.ent',
+    logo: 'https://pr.mfu.ac.th/fileadmin/_processed_/8/7/csm_logo_mfu_3d_colour_0171307b6d.png',
+    link: 'https://en.mfu.ac.th/',
+  },
+  {
+    title: 'Trainer @Hackathon',
+    company: 'Mae Fah Luang University',
+    date: '2018',
+    description: 'Teach MEVN stack, with short course 3 days',
+    logo: 'https://pr.mfu.ac.th/fileadmin/_processed_/8/7/csm_logo_mfu_3d_colour_0171307b6d.png',
+    link: 'https://en.mfu.ac.th/',
+  },
+  {
+    title: 'Attendants',
+    company: 'Mae Fah Luang University',
+    date: '2018 - 2019',
+    description: 'Startup Thailand League 2018, Business Brotherhood, ',
+    logo: 'https://pr.mfu.ac.th/fileadmin/_processed_/8/7/csm_logo_mfu_3d_colour_0171307b6d.png',
+    link: 'https://en.mfu.ac.th/',
   },
 ]);
 
