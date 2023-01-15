@@ -24,12 +24,7 @@
       <div class="grid grid-cols-1 gap-4">
         <Card>
           <H2>About Me</H2>
-          <p>
-            Full-stack developer with 3 years of experience. I'm currently working at Outsourcify
-            Co., Ltd. I'm a self-taught developer who loves to learn new things. I'm a fast learner
-            and I'm always willing to learn new things. I'm a team player and I'm always willing to
-            help my team members.
-          </p>
+          <p>{{ description }}</p>
         </Card>
 
         <Card>
@@ -159,6 +154,8 @@ const experiences = ref([
     link: 'https://en.mfu.ac.th/',
   },
 ]);
+
+const description = `Full-stack developer with 3 years of experience. I'm currently working at Outsourcify Co., Ltd. I'm a self-taught developer who loves to learn new things. I'm a fast learner and I'm always willing to learn new things. I'm a team player and I'm always willing to help my team members.`
 
 const contacts = ref([
   {
