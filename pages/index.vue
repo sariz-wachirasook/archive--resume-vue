@@ -42,7 +42,12 @@
         <Card>
           <H2>Backend Skills</H2>
           <div class="inline-flex flex-wrap gap-2">
-            <Tag v-for="(item, index) in backend" :key="index" :tag="item" />
+            <Tag
+              v-for="(item, index) in backend"
+              :key="index"
+              :tag="item"
+              icon="fa-brands fa-github"
+            />
           </div>
         </Card>
 
@@ -62,7 +67,7 @@
           <ul>
             <li class="flex justify-center gap-2">
               <strong>Email</strong>
-              <span>sariz.wachirasook@gmail.com</span>
+              <a href="mailto:sariz.wachirasook@gmail.com">sariz.wachirasook@gmail.com</a>
             </li>
             <li class="flex justify-center gap-2">
               <strong>Phone</strong>
@@ -91,33 +96,42 @@
 </template>
 
 <script setup lang="ts">
-const frontend = ref(['HTML5', 'SCSS', 'JavaScript', 'jQuery', 'Vue.js', 'Nuxt.js']);
+const frontend = ref([
+  '<i class="fa-brands fa-html5"></i> HTML5',
+  '<i class="fa-solid fa-code"></i> Twig',
+  '<i class="fa-solid fa-code"></i> Pug',
+  '<i class="fa-brands fa-sass"></i> SCSS',
+  '<i class="fa-brands fa-js"></i> JavaScript',
+  '<i class="fa-brands fa-js"></i> jQuery',
+  '<i class="fa-brands fa-vuejs"></i> Vue.js',
+  '<i class="fa-brands fa-vuejs"></i> Nuxt.js',
+  'GSAP',
+]);
 
 const backend = ref([
-  'Symfony',
+  '<i class="fa-brands fa-symfony"></i> Symfony',
   'API Platform',
-  'Magento',
-  'MySQL (MariaDB, MySQL, PostgreSQL)',
-  'Redis',
-  'Node.js',
+  '<i class="fa-brands fa-magento"></i> Magento',
+  '<i class="fa-solid fa-database"></i> MySQL (MariaDB, MySQL, PostgreSQL)',
+  '<i class="fa-solid fa-database"></i> Redis',
+  '<i class="fa-brands fa-node-js"></i> Node.js',
   'Express.js',
   'Prisma',
 ]);
 
 const iaas = ref([
-  'AWS',
-  'Azure',
-  'Linode',
+  '<i class="fa-brands fa-aws"></i> AWS',
+  '<i class="fa-brands fa-linode"></i> Linode',
   'Vultr',
   'Heroku',
   'Netlify',
   'Firebase',
-  'DigitalOcean',
-  'Cloudflare',
-  'Stripe',
-  'PayPal',
-  'SendGrid',
-  'Google Cloud',
+  '<i class="fa-brands fa-digital-ocean"></i> DigitalOcean',
+  '<i class="fa-brands fa-cloudflare"></i> Cloudflare',
+  '<i class="fa-brands fa-stripe-s"></i> Stripe',
+  '<i class="fa-brands fa-paypal"></i> PayPal',
+  '<i class="fa-solid fa-envelope"></i> SendGrid',
+  '<i class="fa-brands fa-google"></i> Google Cloud',
 ]);
 
 const experiences = ref([
@@ -155,7 +169,7 @@ const experiences = ref([
   },
 ]);
 
-const description = `Full-stack developer with 3 years of experience. I'm currently working at Outsourcify Co., Ltd. I'm a self-taught developer who loves to learn new things. I'm a fast learner and I'm always willing to learn new things. I'm a team player and I'm always willing to help my team members.`
+const description = `Full-stack developer with 3 years of experience. I'm currently working at Outsourcify Co., Ltd. I'm a self-taught developer who loves to learn new things. I'm a fast learner and I'm always willing to learn new things. I'm a team player and I'm always willing to help my team members.`;
 
 const contacts = ref([
   {

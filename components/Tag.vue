@@ -1,14 +1,16 @@
 <template>
   <span
-    class="px-1 py-0.5 bg-green-50 rounded inline-flex cursor-pointer hover:opacity-70 transition-opacity"
+    class="px-1 py-0.5 bg-green-50 rounded cursor-pointer hover:opacity-70 transition-opacity"
     :class="[generateColor(tag)]"
-    >{{ tag }}</span
+    v-html="tag"
   >
+  </span>
 </template>
 
 <script setup lang="ts">
 const props = defineProps<{
   tag: string;
+  icon?: string;
 }>();
 
 const generateColor = (tag: string) => {
