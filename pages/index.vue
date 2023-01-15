@@ -1,44 +1,63 @@
 <template>
-  <div class="grid grid-cols-1 md:grid-cols-[2fr,1fr] gap-4">
-    <div class="grid grid-cols-1 gap-4">
-      <Card>
-        <H2>About Me</H2>
-        <p>
-          Full-stack developer with 3 years of experience. I'm currently working at
-          <a href="https://www.thesoftwaresimple.com/">The Software Simple</a> as a full-stack
-          developer.
-        </p>
-      </Card>
-
-      <Card>
-        <H2>Experiences</H2>
-        <TimeLine :items="experiences" />
-      </Card>
-
-      <Card>
-        <H2>Frontend Skills</H2>
-        <div class="inline-flex flex-wrap gap-2">
-          <Tag v-for="(item, index) in frontend" :key="index" :tag="item" />
+  <div>
+    <section class="mb-10">
+      <Card class="bg-transparent shadow-transparent">
+        <div class="flex gap-10 align-middle">
+          <div class="flex flex-col align-middle justify-center">
+            <h1 class="md:text-7xl text-5xl">Sariz Wachirasook</h1>
+            <hr class="my-3" />
+            <div class="flex justify-between">
+              <p class="text-xl">Software Engineer</p>
+              <a href="mailto:sariz.wachirasook@gmail.com" class="text-xl text-gray-500">sariz.wachirasook@gmail.com</a>
+            </div>
+          </div>
+          <Avatar
+            class="ml-auto"
+            src="https://outsourcify.net/wp-content/uploads/2022/04/Sariz-160x160-c-default.jpg"
+          />
         </div>
       </Card>
+    </section>
+    <div class="grid grid-cols-1 md:grid-cols-[2fr,1fr] gap-4">
+      <div class="grid grid-cols-1 gap-4">
+        <Card>
+          <H2>About Me</H2>
+          <p>
+            Full-stack developer with 3 years of experience. I'm currently working at
+            <a href="https://www.thesoftwaresimple.com/">The Software Simple</a> as a full-stack
+            developer.
+          </p>
+        </Card>
 
-      <Card>
-        <H2>Backend Skills</H2>
-        <div class="inline-flex flex-wrap gap-2">
-          <Tag v-for="(item, index) in backend" :key="index" :tag="item" />
-        </div>
-      </Card>
+        <Card>
+          <H2>Experiences</H2>
+          <TimeLine :items="experiences" />
+        </Card>
 
-      <Card>
-        <H2>Infrastructure</H2>
-        <div class="inline-flex flex-wrap gap-2">
-          <Tag v-for="(item, index) in iaas" :key="index" :tag="item" />
-        </div>
-      </Card>
-    </div>
+        <Card>
+          <H2>Frontend Skills</H2>
+          <div class="inline-flex flex-wrap gap-2">
+            <Tag v-for="(item, index) in frontend" :key="index" :tag="item" />
+          </div>
+        </Card>
 
-    <div class="grid grid-cols-1 gap-4">
-      <!-- <Card>
+        <Card>
+          <H2>Backend Skills</H2>
+          <div class="inline-flex flex-wrap gap-2">
+            <Tag v-for="(item, index) in backend" :key="index" :tag="item" />
+          </div>
+        </Card>
+
+        <Card>
+          <H2>Infrastructure</H2>
+          <div class="inline-flex flex-wrap gap-2">
+            <Tag v-for="(item, index) in iaas" :key="index" :tag="item" />
+          </div>
+        </Card>
+      </div>
+
+      <div class="grid grid-cols-1 gap-4">
+        <!-- <Card>
         <H2>Contacts</H2>
         <List :items="contacts" />
       </Card>
@@ -47,6 +66,7 @@
         <H2>Language</H2>
         <List :items="languages" />
       </Card> -->
+      </div>
     </div>
   </div>
 </template>
