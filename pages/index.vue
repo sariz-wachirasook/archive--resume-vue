@@ -7,7 +7,7 @@
             <h1 class="md:text-7xl text-5xl">Sariz Wachirasook</h1>
             <hr class="my-3" />
             <div class="flex justify-between">
-              <p class="text-xl">Software Engineer</p>
+              <p class="text-xl">Senior Software Engineer</p>
               <a href="mailto:sariz.wachirasook@gmail.com" class="text-xl text-gray-500"
                 >sariz.wachirasook@gmail.com</a
               >
@@ -55,7 +55,7 @@
       </div>
 
       <div class="flex flex-col gap-4">
-        <Card>
+        <Card class="bg-gray-100">
           <H2>About Me</H2>
           <p>{{ description }}</p>
         </Card>
@@ -87,6 +87,33 @@
             <li class="flex justify-between">
               <strong>Thai</strong>
               <span>Native</span>
+            </li>
+          </ul>
+        </Card>
+
+        <Card>
+          <!-- soft skill -->
+          <H2>Soft Skills</H2>
+          <ul>
+            <li class="flex justify-between">
+              <strong>Leadership</strong>
+              <span>Beginner</span>
+            </li>
+            <li class="flex justify-between">
+              <strong>Communication</strong>
+              <span>Intermediate</span>
+            </li>
+            <li class="flex justify-between">
+              <strong>Teamwork</strong>
+              <span>Intermediate</span>
+            </li>
+            <li class="flex justify-between">
+              <strong>Problem Solving</strong>
+              <span>Intermediate</span>
+            </li>
+            <li class="flex justify-between">
+              <strong>Time Management</strong>
+              <span>Intermediate</span>
             </li>
           </ul>
         </Card>
@@ -189,3 +216,10 @@ const languages = ref([
   },
 ]);
 </script>
+
+<style>
+body {
+  /* popins */
+  font-family: 'Poppins', sans-serif;
+}
+</style>
