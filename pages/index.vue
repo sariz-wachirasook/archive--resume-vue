@@ -23,11 +23,6 @@
     <div class="grid grid-cols-1 md:grid-cols-[2fr,1fr] gap-4">
       <div class="grid grid-cols-1 gap-4">
         <Card>
-          <H2>About Me</H2>
-          <p>{{ description }}</p>
-        </Card>
-
-        <Card>
           <H2>Experiences</H2>
           <TimeLine :items="experiences" />
         </Card>
@@ -60,6 +55,11 @@
       </div>
 
       <div class="flex flex-col gap-4">
+        <Card>
+          <H2>About Me</H2>
+          <p>{{ description }}</p>
+        </Card>
+
         <Card>
           <!-- contact -->
           <H2>Contacts</H2>
