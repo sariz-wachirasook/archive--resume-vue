@@ -27,9 +27,7 @@
               </div>
             </div>
 
-            <div class="mt-2 text-sm text-gray-500">
-              <p>{{ item.description }}</p>
-            </div>
+            <div class="mt-2 text-sm text-gray-500" v-html="item.description"></div>
           </div>
         </div>
       </li>

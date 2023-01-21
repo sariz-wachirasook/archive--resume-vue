@@ -23,6 +23,16 @@ const generateColor = (tag: string) => {
     'bg-indigo-100',
     'bg-purple-100',
     'bg-pink-100',
+    'bg-gray-100',
+    // 50
+    'bg-red-200',
+    'bg-yellow-200',
+    'bg-green-200',
+    'bg-blue-200',
+    'bg-indigo-200',
+    'bg-purple-200',
+    'bg-pink-200',
+    'bg-gray-200',
   ];
 
   const hash = tag.split('').reduce((acc: any, char: string) => {

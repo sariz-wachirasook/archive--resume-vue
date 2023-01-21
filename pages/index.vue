@@ -139,9 +139,10 @@ const backend = ref([
   '<i class="fa-brands fa-symfony"></i> Symfony',
   'API Platform',
   '<i class="fa-brands fa-magento"></i> Magento',
-  '<i class="fa-solid fa-database"></i> MySQL (MariaDB, MySQL, PostgreSQL)',
   '<i class="fa-solid fa-database"></i> Redis',
   '<i class="fa-brands fa-node-js"></i> Node.js',
+  '<i class="fa-solid fa-database"></i> MySQL (MariaDB, MySQL, PostgreSQL)',
+  'Sylius',
   'Express.js',
   'Prisma',
 ]);
@@ -163,10 +164,10 @@ const iaas = ref([
 
 const experiences = ref([
   {
-    title: 'Full-Stack Developer',
+    title: 'Senior Software Engineer',
     company: 'Outsourcify Co., Ltd',
     date: '2020 - Present',
-    description: 'Experience in e-commerce, e-learning, and custom software development solutions.',
+    description: `<p>- Experience in e-commerce, e-learning, and custom software development solutions.</p><p>- Full Stack Developer, Work on Frontend, Backend, and Infrastructure</p><p>- Teach almost 7 internship in 2 years</p>`,
     logo: 'https://lh5.googleusercontent.com/-W7Ibrkqhtdw/AAAAAAAAAAI/AAAAAAAAAAA/h4Dj9NFL6NU/s44-p-k-no-ns-nd/photo.jpg',
     link: 'https://outsourcify.net/',
   },
@@ -174,7 +175,7 @@ const experiences = ref([
     title: 'Tester & Front-end (part time)',
     company: 'Mae Fah Luang University',
     date: '2019',
-    description: 'Working on a project for a cli.ent',
+    description: 'Working on a project for a client',
     logo: 'https://pr.mfu.ac.th/fileadmin/_processed_/8/7/csm_logo_mfu_3d_colour_0171307b6d.png',
     link: 'https://en.mfu.ac.th/',
   },
@@ -196,7 +197,7 @@ const experiences = ref([
   },
 ]);
 
-const description = `Full-stack developer with 3 years of experience. I'm currently working at Outsourcify Co., Ltd. I'm a self-taught developer who loves to learn new things. I'm a fast learner and I'm always willing to learn new things. I'm a team player and I'm always willing to help my team members.`;
+const description = `Hi, I'm Senior Software Engineer with 3 years of experience. I'm currently working at Outsourcify Co., Ltd. I'm a self-taught developer who loves to learn & teach new things to my internship. If you have any questions or want to talk about technology with me, feel free to contact me.`;
 
 const contacts = ref([
   {
