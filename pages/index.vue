@@ -55,7 +55,7 @@
       </div>
 
       <div class="flex flex-col gap-4">
-        <Card class="bg-gray-100">
+        <Card>
           <H2>About Me</H2>
           <p>{{ description }}</p>
         </Card>
