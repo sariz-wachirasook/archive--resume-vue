@@ -28,6 +28,11 @@
         </Card>
 
         <Card>
+          <H2>Educations</H2>
+          <TimeLine :items="educations" />
+        </Card>
+
+        <Card>
           <H2>Frontend Skills</H2>
           <div class="inline-flex flex-wrap gap-2">
             <Tag v-for="(item, index) in frontend" :key="index" :tag="item" />
@@ -57,7 +62,7 @@
       <div class="flex flex-col gap-4">
         <Card>
           <H2>About Me</H2>
-          <p>{{ description }}</p>
+          <p class="text-gray-900">{{ description }}</p>
         </Card>
 
         <Card>
@@ -66,12 +71,14 @@
 
           <ul>
             <li class="flex justify-center gap-2">
-              <strong>Email</strong>
-              <a href="mailto:sariz.wachirasook@gmail.com">sariz.wachirasook@gmail.com</a>
+              <strong class="text-gray-900">Email</strong>
+              <a href="mailto:sariz.wachirasook@gmail.com" class="text-gray-500"
+                >sariz.wachirasook@gmail.com</a
+              >
             </li>
             <li class="flex justify-center gap-2">
-              <strong>Phone</strong>
-              <span>+66 623249451</span>
+              <strong class="text-gray-900">Phone</strong>
+              <span class="text-gray-500">+66 623249451</span>
             </li>
           </ul>
         </Card>
@@ -81,12 +88,12 @@
           <H2>Language</H2>
           <ul>
             <li class="flex justify-between">
-              <strong>English</strong>
-              <span>Intermediate</span>
+              <strong class="text-gray-900">English</strong>
+              <span class="text-gray-500">Intermediate</span>
             </li>
             <li class="flex justify-between">
-              <strong>Thai</strong>
-              <span>Native</span>
+              <strong class="text-gray-900">Thai</strong>
+              <span class="text-gray-500">Native</span>
             </li>
           </ul>
         </Card>
@@ -96,24 +103,24 @@
           <H2>Soft Skills</H2>
           <ul>
             <li class="flex justify-between">
-              <strong>Leadership</strong>
-              <span>Beginner</span>
+              <strong class="text-gray-900">Leadership</strong>
+              <span class="text-gray-500">Beginner</span>
             </li>
             <li class="flex justify-between">
-              <strong>Communication</strong>
-              <span>Intermediate</span>
+              <strong class="text-gray-900">Communication</strong>
+              <span class="text-gray-500">Intermediate</span>
             </li>
             <li class="flex justify-between">
-              <strong>Teamwork</strong>
-              <span>Intermediate</span>
+              <strong class="text-gray-900">Teamwork</strong>
+              <span class="text-gray-500">Intermediate</span>
             </li>
             <li class="flex justify-between">
-              <strong>Problem Solving</strong>
-              <span>Intermediate</span>
+              <strong class="text-gray-900">Problem Solving</strong>
+              <span class="text-gray-500">Intermediate</span>
             </li>
             <li class="flex justify-between">
-              <strong>Time Management</strong>
-              <span>Intermediate</span>
+              <strong class="text-gray-900">Time Management</strong>
+              <span class="text-gray-500">Intermediate</span>
             </li>
           </ul>
         </Card>
@@ -191,7 +198,7 @@ const experiences = ref([
     title: 'Attendants',
     company: 'Mae Fah Luang University',
     date: '2018 - 2019',
-    description: 'Startup Thailand League 2018, Business Brotherhood, ',
+    description: '<p>- Startup Thailand League 2018, 2019</p><p>- Business Brotherhood (Startup)</p>',
     logo: 'https://pr.mfu.ac.th/fileadmin/_processed_/8/7/csm_logo_mfu_3d_colour_0171307b6d.png',
     link: 'https://en.mfu.ac.th/',
   },
@@ -214,6 +221,16 @@ const languages = ref([
   {
     title: 'English',
     level: 'Intermediate',
+  },
+]);
+
+const educations = ref([
+  {
+    title: 'Bachelor of Science in Software Engineering',
+    company: 'Mae Fah Luang University',
+    date: '2016 - 2019',
+    logo: 'https://pr.mfu.ac.th/fileadmin/_processed_/8/7/csm_logo_mfu_3d_colour_0171307b6d.png',
+    link: 'https://en.mfu.ac.th/',
   },
 ]);
 </script>

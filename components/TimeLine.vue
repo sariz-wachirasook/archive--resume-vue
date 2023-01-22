@@ -15,7 +15,7 @@
           <div class="ml-3 w-full">
             <div class="grid grid-cols-[2fr,1fr]">
               <div>
-                <p class="text-sm font-medium text-gray-900">
+                <p class="text-sm font-bold text-gray-900">
                   {{ item.title }}
                 </p>
                 <p class="text-sm font-medium text-gray-900">
