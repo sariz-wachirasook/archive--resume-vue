@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="mb-10">
+    <section class="mb-5">
       <Card class="bg-transparent shadow-transparent">
         <div class="flex flex-col-reverse gap-10 align-middle md:flex-row">
           <div class="flex flex-col align-middle justify-center">
@@ -52,13 +52,6 @@
           <H2>Infra sturcture and more</H2>
           <div class="inline-flex flex-wrap gap-2">
             <Tag v-for="(item, index) in iaas" :key="index" :tag="item" />
-          </div>
-        </Card>
-
-        <Card>
-          <H2>Payment Integrations</H2>
-          <div class="inline-flex flex-wrap gap-2">
-            <Tag v-for="(item, index) in payments" :key="index" :tag="item" />
           </div>
         </Card>
       </div>
@@ -127,6 +120,13 @@
               <span class="text-gray-500">Good</span>
             </li>
           </ul>
+        </Card>
+        <hr />
+        <Card>
+          <H2>Payment Integrations</H2>
+          <div class="inline-flex flex-wrap gap-2">
+            <Tag v-for="(item, index) in payments" :key="index" :tag="item" />
+          </div>
         </Card>
       </div>
     </div>
