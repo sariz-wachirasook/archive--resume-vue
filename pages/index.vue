@@ -15,7 +15,7 @@
           </div>
           <Avatar
             class="ml-auto"
-            src="/images/avatar.webp"
+            src="images/avatar.webp"
           />
         </div>
       </Card>
