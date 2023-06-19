@@ -2,21 +2,18 @@
   <div>
     <section class="mb-10">
       <Card class="bg-transparent shadow-transparent">
-        <div class="flex gap-10 align-middle">
+        <div class="flex flex-col-reverse gap-10 align-middle md:flex-row">
           <div class="flex flex-col align-middle justify-center">
             <h1 class="md:text-7xl text-5xl">Sariz Wachirasook</h1>
             <hr class="my-3" />
-            <div class="flex justify-between">
+            <div class="flex justify-between flex-wrap">
               <p class="text-xl">Senior Software Engineer</p>
               <a href="mailto:sariz.wachirasook@gmail.com" class="text-xl text-gray-500"
                 >sariz.wachirasook@gmail.com</a
               >
             </div>
           </div>
-          <Avatar
-            class="ml-auto"
-            src="/images/avatar.webp"
-          />
+          <Avatar class="md:ml-auto" src="/images/avatar.webp" />
         </div>
       </Card>
     </section>
