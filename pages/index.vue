@@ -15,7 +15,7 @@
           </div>
           <Avatar
             class="ml-auto"
-            src="https://outsourcify.net/wp-content/uploads/2022/04/Sariz-160x160-c-default.jpg"
+            src="/images/avatar.webp"
           />
         </div>
       </Card>
@@ -52,9 +52,16 @@
         </Card>
 
         <Card>
-          <H2>Infrastructure</H2>
+          <H2>Infra sturcture and more</H2>
           <div class="inline-flex flex-wrap gap-2">
             <Tag v-for="(item, index) in iaas" :key="index" :tag="item" />
+          </div>
+        </Card>
+
+        <Card>
+          <H2>Payment Integrations</H2>
+          <div class="inline-flex flex-wrap gap-2">
+            <Tag v-for="(item, index) in payments" :key="index" :tag="item" />
           </div>
         </Card>
       </div>
@@ -104,23 +111,23 @@
           <ul>
             <li class="flex justify-between">
               <strong class="text-gray-900">Leadership</strong>
-              <span class="text-gray-500">Beginner</span>
+              <span class="text-gray-500">Can do</span>
             </li>
             <li class="flex justify-between">
               <strong class="text-gray-900">Communication</strong>
-              <span class="text-gray-500">Intermediate</span>
+              <span class="text-gray-500">I'm Ambivert</span>
             </li>
             <li class="flex justify-between">
               <strong class="text-gray-900">Teamwork</strong>
-              <span class="text-gray-500">Intermediate</span>
+              <span class="text-gray-500">Friendly</span>
             </li>
             <li class="flex justify-between">
               <strong class="text-gray-900">Problem Solving</strong>
-              <span class="text-gray-500">Intermediate</span>
+              <span class="text-gray-500">Logical Guy</span>
             </li>
             <li class="flex justify-between">
               <strong class="text-gray-900">Time Management</strong>
-              <span class="text-gray-500">Intermediate</span>
+              <span class="text-gray-500">Good</span>
             </li>
           </ul>
         </Card>
@@ -143,12 +150,15 @@ const frontend = ref([
 ]);
 
 const backend = ref([
+  '<i class="fa-brands fa-php"></i> PHP',
   '<i class="fa-brands fa-symfony"></i> Symfony',
   'API Platform',
   '<i class="fa-brands fa-magento"></i> Magento',
   '<i class="fa-solid fa-database"></i> Redis',
   '<i class="fa-brands fa-node-js"></i> Node.js',
   '<i class="fa-solid fa-database"></i> MySQL (MariaDB, MySQL, PostgreSQL)',
+  '<i class="fa-brands fa-wordpress"></i> WordPress',
+  '<i class="fa-brands fa-wordpress"></i> WooCommerce',
   'Sylius',
   'Express.js',
   'Prisma',
@@ -162,11 +172,16 @@ const iaas = ref([
   'Netlify',
   'Firebase',
   '<i class="fa-brands fa-digital-ocean"></i> DigitalOcean',
+  '<i class="fa-brands fa-digital-ocean"></i> CloudWays',
   '<i class="fa-brands fa-cloudflare"></i> Cloudflare',
-  '<i class="fa-brands fa-stripe-s"></i> Stripe',
-  '<i class="fa-brands fa-paypal"></i> PayPal',
   '<i class="fa-solid fa-envelope"></i> SendGrid',
   '<i class="fa-brands fa-google"></i> Google Cloud',
+]);
+
+const payments = ref([
+  '<i class="fas fa-money-bill-wave"></i> OPN Payment (Omise)',
+  '<i class="fa-brands fa-paypal"></i> PayPal',
+  '<i class="fas fa-money-bill-wave"></i> Klarna',
 ]);
 
 const experiences = ref([
@@ -198,13 +213,14 @@ const experiences = ref([
     title: 'Attendants',
     company: 'Mae Fah Luang University',
     date: '2018 - 2019',
-    description: '<p>- Startup Thailand League 2018, 2019</p><p>- Business Brotherhood (Startup)</p>',
+    description:
+      '<p>- Startup Thailand League 2018, 2019</p><p>- Business Brotherhood (Startup)</p>',
     logo: 'https://pr.mfu.ac.th/fileadmin/_processed_/8/7/csm_logo_mfu_3d_colour_0171307b6d.png',
     link: 'https://en.mfu.ac.th/',
   },
 ]);
 
-const description = `Hi, I'm Senior Software Engineer with 3 years of experience. I'm currently working at Outsourcify Co., Ltd. I'm a self-taught developer who loves to learn & teach new things to my internship. If you have any questions or want to talk about technology with me, feel free to contact me.`;
+const description = `Hi, I'm Senior Software Engineer with 3 years of experience. I'm currently working at Outsourcify Co., Ltd. I'm a self-taught developer who loves to learn & teach new things to my internship. If you have any questions or want to talk about technology archetecture with me, feel free to contact me.`;
 
 const contacts = ref([
   {

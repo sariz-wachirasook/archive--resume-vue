@@ -27,7 +27,11 @@
               </div>
             </div>
 
-            <div class="mt-2 text-sm text-gray-500" v-html="item.description"></div>
+            <div
+              v-if="item.description"
+              class="mt-2 text-sm text-gray-500"
+              v-html="item.description"
+            ></div>
           </div>
         </div>
       </li>
