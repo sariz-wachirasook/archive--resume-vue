@@ -1,6 +1,6 @@
 <template>
   <div class="rounded-full overflow-hidden w-full h-full max-w-[200px] max-h-[200px]">
-    <nuxt-img :src="src" :alt="alt" :class="size" class="w-full h-full" />
+    <img :src="src" :alt="alt" :class="size" class="w-full h-full" />
   </div>
 </template>
 
