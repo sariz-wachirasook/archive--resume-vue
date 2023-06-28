@@ -7,7 +7,7 @@
             <h1 class="md:text-7xl text-5xl">Sariz Wachirasook</h1>
             <hr class="my-3" />
             <div class="flex justify-between flex-wrap">
-              <p class="text-xl">Senior Software Engineer</p>
+              <p class="text-xl">Software Engineer</p>
               <a href="mailto:sariz.wachirasook@gmail.com" class="text-xl text-gray-500"
                 >sariz.wachirasook@gmail.com</a
               >
@@ -217,7 +217,7 @@ const experiences = ref([
   },
 ]);
 
-const description = `Hi, I'm Senior Software Engineer with 3 years of experience. I'm currently working at Outsourcify Co., Ltd. I'm a self-taught developer who loves to learn & teach new things to my internship. If you have any questions or want to talk about technology archetecture with me, feel free to contact me.`;
+const description = `Better describe as Full Stack Developer within 3 years of experience, proficient in multiple programming languages such as JavaScript, PHP and mostly popular framework such as ReactJs, NuxtJs, Symfony, Laravel, NestJS. Can help drive your business forward with new technology and new ideas with development experience in e-commerce, e-learning, and custom software development solutions.`;
 
 const contacts = ref([
   {
